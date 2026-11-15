@@ -1,0 +1,21 @@
+{
+  "capital": 10000.0,
+  "vol_target_annual": 0.20,
+  "ewmac_speeds": [8, 16, 32, 64],
+  "breakout_lookbacks": [40, 80],
+  "buffer_fraction": 0.10,
+  "weights_method": "equal",
+  "idm_cap": 2.5,
+  "sl_vol_mult": 6.0,
+  "exec_lag": 1,
+  "dd_tier1": 0.03,
+  "dd_tier2": 0.05,
+  "dd_tier3": 0.075,
+  "daily_loss_cap": 300.0,
+  "max_dca_layers": 0,
+  "instruments": {
+    "XAUUSD": {"point_value": 100.0,    "min_lot": 0.01, "lot_step": 0.01, "max_lot": 5.0,  "cost_per_lot_rt": 7.0, "spread_price": 0.30},
+    "EURUSD": {"point_value": 100000.0, "min_lot": 0.01, "lot_step": 0.01, "max_lot": 10.0, "cost_per_lot_rt": 7.0, "spread_price": 0.00012},
+    "BTCUSD": {"point_value": 1.0,      "min_lot": 0.01, "lot_step": 0.01, "max_lot": 2.0,  "cost_per_lot_rt": 5.0, "spread_price": 20.0}
+  }
+}
